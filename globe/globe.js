@@ -71,7 +71,7 @@ DAT.Globe = function(container, colorFn) {
 
   var overRenderer;
 
-  var imgDir = './';
+  var imgDir = '../globe/';//for highub hosting
 
   var curZoomSpeed = 0;
   var zoomSpeed = 50;
