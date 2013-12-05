@@ -10,7 +10,11 @@
       body {
         margin: 0;
         padding: 0;
+<<<<<<< HEAD
         background: #000000 url(loading.gif) center center no-repeat;
+=======
+        background: #000000 url(globe/loading.gif) center center no-repeat;
+>>>>>>> gh-pages
         color: #ffffff;
         font-family: sans-serif;
         font-size: 13px;
@@ -66,7 +70,11 @@
         padding: 10px;
       }
 
+<<<<<<< HEAD
       .year {
+=======
+      .serie {
+>>>>>>> gh-pages
         font: 16px Georgia;
         line-height: 26px;
         height: 30px;
@@ -79,7 +87,11 @@
         -webkit-transition: all 0.1s ease-out;
       }
 
+<<<<<<< HEAD
       .year:hover, .year.active {
+=======
+      .serie:hover, .serie.active {
+>>>>>>> gh-pages
         font-size: 23px;
         color: #fff;
       }
@@ -95,7 +107,11 @@
         position: absolute;
         bottom: 15px;
         left: 20px;
+<<<<<<< HEAD
         background: url(ce.png);
+=======
+        background: url(globe/ce.png);
+>>>>>>> gh-pages
       }
 
 
@@ -105,6 +121,7 @@
 
   <div id="container"></div>
 
+<<<<<<< HEAD
   <div id="info">
     <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
   </div>
@@ -117,23 +134,47 @@
 
   <div id="title">
     World Population
+=======
+  <div id="info"> via: 
+    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by Mapping & Co <span class="bull">&bull;</span> Data acquired from <a href="http://gcmd.nasa.gov/records/GCMD_GNV181.html">IAEA (International Atomic Energy Agency)</a>
+  </div>
+
+  <div id="currentInfo">
+    <span id="series0" class="series">Total number of reactors</span>
+    <span id="series1" class="series">Active Reactors</span>
+  </div>
+
+  <div id="title">
+    Nuclear Power Stations Worldwide
+>>>>>>> gh-pages
   </div>
 
   <a id="ce" href="http://www.chromeexperiments.com/globe">
     <span>This is a Chrome Experiment</span>
   </a>
 
+<<<<<<< HEAD
   <script type="text/javascript" src="./third-party/Detector.js"></script>
   <script type="text/javascript" src="./third-party/three.min.js"></script>
   <script type="text/javascript" src="./third-party/Tween.js"></script>
   <script type="text/javascript" src="globe.js"></script>
+=======
+  <script type="text/javascript" src="globe/third-party/Detector.js"></script>
+  <script type="text/javascript" src="globe/third-party/three.min.js"></script>
+  <script type="text/javascript" src="globe/third-party/Tween.js"></script>
+  <script type="text/javascript" src="globe/globe.js"></script>
+>>>>>>> gh-pages
   <script type="text/javascript">
 
     if(!Detector.webgl){
       Detector.addGetWebGLMessage();
     } else {
 
+<<<<<<< HEAD
       var years = ['1990','1995','2000'];
+=======
+      var series = ['1990','1995','2000'];
+>>>>>>> gh-pages
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
 
@@ -142,6 +183,7 @@
       
       var settime = function(globe, t) {
         return function() {
+<<<<<<< HEAD
           new TWEEN.Tween(globe).to({time: t/years.length},500).easing(TWEEN.Easing.Cubic.EaseOut).start();
           var y = document.getElementById('year'+years[t]);
           if (y.getAttribute('class') === 'year active') {
@@ -152,11 +194,27 @@
             yy[i].setAttribute('class','year');
           }
           y.setAttribute('class', 'year active');
+=======
+          new TWEEN.Tween(globe).to({time: t/series.length},500).easing(TWEEN.Easing.Cubic.EaseOut).start();
+          var y = document.getElementById('serie'+years[t]);
+          if (y.getAttribute('class') === 'serie active') {
+            return;
+          }
+          var yy = document.getElementsByClassName('serie');
+          for(i=0; i<yy.length; i++) {
+            yy[i].setAttribute('class','serie');
+          }
+          y.setAttribute('class', 'serie active');
+>>>>>>> gh-pages
         };
       };
       
       for(var i = 0; i<years.length; i++) {
+<<<<<<< HEAD
         var y = document.getElementById('year'+years[i]);
+=======
+        var y = document.getElementById('serie'+years[i]);
+>>>>>>> gh-pages
         y.addEventListener('mouseover', settime(globe,i), false);
       }
       
@@ -165,7 +223,11 @@
       
       
       xhr = new XMLHttpRequest();
+<<<<<<< HEAD
       xhr.open('GET', 'Nuclear_power_stations_worldwide.json', true);
+=======
+      xhr.open('GET', 'Nuclear_power_WebGL.json', true);
+>>>>>>> gh-pages
       xhr.onreadystatechange = function(e) {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
