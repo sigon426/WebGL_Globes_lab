@@ -10,7 +10,7 @@ http://www.theguardian.com/news/datablog/2011/mar/14/nuclear-power-plant-acciden
 
 The color of each location is based on the International Nuclear Events Scale (INES) 
 
-![alt tag](http://www-ns.iaea.org/images/iec/ines.gif)
+![alt tag](https://raw.github.com/mappingCo/WebGL_Globes_lab/gh-pages/img/globe.png)
 
 demo:http://mappingco.github.io/WebGL_Globes_lab/nuclear.html
 
