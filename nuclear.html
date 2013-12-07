@@ -80,7 +80,6 @@
         float: left;
         width: 290px;
         color: rgba(255, 255, 255, 0.4);
-
         cursor: pointer;
         -webkit-transition: all 0.1s ease-out;
       }
@@ -98,12 +97,17 @@
         left: 20px;
         background: url(./img/ce.png);
       }
-
+      .forkme{
+        position: absolute; top: 0; right: 0; border: 0;
+      }
 
     </style>
   </head>
   <body>
-    <a href="https://github.com/mappingCo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <div class="forkme">
+       <a href="https://github.com/mappingCo"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    </div>
+   
 
   <div id="container"></div>
 
