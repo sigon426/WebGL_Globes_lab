@@ -12,6 +12,8 @@ The color of each location is based on the International Nuclear Events Scale (I
 
 ![alt tag](http://www-ns.iaea.org/images/iec/ines.gif)
 
+demo:http://mappingco.github.io/WebGL_Globes_lab/nuclear.html
+
 The Chernobyl(1986) and Fukushima (2011) are the only nuclear disasters to measure Level 7 on the International Nuclear Event Scale.
 
 
