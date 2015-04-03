@@ -12,8 +12,8 @@ A complete table with incidents can be found here: http://www.climatesceptics.or
 
 The color of each location is based on the International Nuclear Events Scale (INES). 
 
-![alt tag](https://raw.github.com/mappingCo/WebGL_Globes_lab/gh-pages/img/globe.png)
+![alt tag](https://raw.github.com/sigon426/WebGL_Globes_lab/gh-pages/img/globe.png)
 
-demo:http://mappingco.github.io/WebGL_Globes_lab/nuclear.html
+demo:http://sigon426.github.io/WebGL_Globes_lab/nuclear.html
 
 Chernobyl (1986) and Fukushima (2011) are the only nuclear disasters to measure Level 7 on the International Nuclear Event Scale.
